@@ -11,15 +11,22 @@
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.0",
+    "aws-sdk": "^2.750.0",
+    "fs-extra": "^9.0.1",
     "tslib": "^1.13.0"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
+    "@types/aws-lambda": "^8.10.62",
+    "@types/fs-extra": "^9.0.1",
+    "@types/jest": "^26.0.13",
     "@types/node": "^10.17.31",
+    "aws-lambda": "^1.0.6",
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^0.1.0",
     "globby": "^10.0.2",
+    "jest": "^26.4.2",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
@@ -48,7 +55,8 @@
   "repository": "arjanvanderleden/create-aws-lambda-json",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
-    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "posttest": "eslint ./src --ext .ts --config .eslintrc",
+    "lin-fix": "eslint . --ext .ts --config .eslintrc --fix",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
