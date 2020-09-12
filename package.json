@@ -1,5 +1,5 @@
 {
-  "name": "transform-json",
+  "name": "transform-json-cli",
   "description": "Creates aws lambda development json for like events ",
   "version": "0.1.0",
   "author": "Arjan van der Leden",
