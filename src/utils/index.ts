@@ -1,12 +1,13 @@
 import {Lookup} from '../types'
 
 const isNotAnEmptyString = (s: string) => s.trim().length > 0
+const toTrimmed = (s: string) => s.trim();
 
 export const toStringArray = (src: string) => src === undefined ?
   [] :
   src
   .split(',')
-  .map(String.prototype.trim)
+  .map(toTrimmed)
   .filter(isNotAnEmptyString)
 
 export const toDynamoDbKeys = (attributeList: string[], data: any) => {
@@ -31,7 +32,7 @@ export const toPathParameters = (src?: string) => {
     {} :
     src
     .split(';')
-    .map(String.prototype.trim)
+    .map(toTrimmed)
     .filter(isNotAnEmptyString)
     .reduce((params: Lookup<string>, param: string) => {
       const [paramName, paramValue] = param.split('=')

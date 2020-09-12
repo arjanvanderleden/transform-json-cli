@@ -19,7 +19,7 @@ export class FileDataReader implements Reader {
     if (!fse.existsSync(this.fileName)) {
       throw new Error(`No such file ${this.fileName}`)
     }
-    const data = fse.readJSON(this.fileName)
+    const data = await fse.readJSON(this.fileName)
     const optionsFileName = toOptionFileName(this.fileName)
     const options = fse.existsSync(optionsFileName) ? await fse.readJSON(optionsFileName) : {}
     return {data, options}
