@@ -1,5 +1,5 @@
 {
-  "name": "create-aws-lambda-json",
+  "name": "transform-json",
   "description": "Creates aws lambda development json for like events ",
   "version": "0.0.1",
   "author": "Arjan van der Leden",
@@ -47,7 +47,7 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "create-aws-lambda-json",
+    "bin": "transform-json",
     "plugins": [
       "@oclif/plugin-help"
     ]
