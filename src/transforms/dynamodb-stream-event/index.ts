@@ -12,14 +12,6 @@ export class DynamoDbStreamEventTransform extends TransformBase<DynamoDbStreamEv
 
     readonly description = 'creates a DynamoDb stream event';
 
-    constructor() {
-      super()
-    }
-
-    setOptions(options: DynamoDbStreamEventTransformOptions) {
-      this.options = options
-    }
-
     readonly transform = (data: any, options?: DynamoDbStreamEventTransformOptions) => {
       const NewImage = DynamoDB.Converter.marshall(data)
       const OldImage = DynamoDB.Converter.marshall(data)

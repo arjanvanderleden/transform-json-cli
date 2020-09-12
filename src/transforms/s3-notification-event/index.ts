@@ -11,14 +11,6 @@ export class S3NotificationEventTransform extends TransformBase<S3NotificationEv
 
     readonly description = 'creates a S3 notification event';
 
-    constructor() {
-      super()
-    }
-
-    setOptions(options: S3NotificationEventTransformOptions) {
-      this.options = options
-    }
-
     readonly transform = (_data: any, _options?: S3NotificationEventTransformOptions) => {
       return {
         Records: [
