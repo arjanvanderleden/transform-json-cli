@@ -16,9 +16,9 @@ export class Transformator {
     const {reader, writer, transforms} = this.params
 
     const toTransformPromise = async (transform: TransformBase<any>) => {
-      const data = await reader.read()
-      const result = await transform.transform(data)
-      await writer.write(result)
+      const {data, options} = await reader.read()
+      const result = await transform.transform(data, options)
+      await writer.write(result, transform.name)
     }
 
     const promises = transforms.map(toTransformPromise)
