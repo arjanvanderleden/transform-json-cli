@@ -1,7 +1,7 @@
 {
   "name": "transform-json",
   "description": "Creates aws lambda development json for like events ",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Arjan van der Leden",
   "bin": {
     "create-aws-lambda-json": "./bin/run"

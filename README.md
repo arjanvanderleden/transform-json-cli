@@ -16,31 +16,31 @@ Creates aws lambda development json for like events
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g create-aws-lambda-json
-$ create-aws-lambda-json COMMAND
+$ npm install -g transform-json
+$ transform-json COMMAND
 running command...
-$ create-aws-lambda-json (-v|--version|version)
-create-aws-lambda-json/0.0.1 darwin-x64 node-v12.18.3
-$ create-aws-lambda-json --help [COMMAND]
+$ transform-json (-v|--version|version)
+transform-json/0.1.0 darwin-x64 node-v12.18.3
+$ transform-json --help [COMMAND]
 USAGE
-  $ create-aws-lambda-json COMMAND
+  $ transform-json COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`create-aws-lambda-json all`](#create-aws-lambda-json-all)
-* [`create-aws-lambda-json help [COMMAND]`](#create-aws-lambda-json-help-command)
-* [`create-aws-lambda-json list`](#create-aws-lambda-json-list)
-* [`create-aws-lambda-json single TRANSFORM`](#create-aws-lambda-json-single-transform)
+* [`transform-json all`](#transform-json-all)
+* [`transform-json help [COMMAND]`](#transform-json-help-command)
+* [`transform-json list`](#transform-json-list)
+* [`transform-json single TRANSFORM`](#transform-json-single-transform)
 
-## `create-aws-lambda-json all`
+## `transform-json all`
 
 runs all transforms on input data
 
 ```
 USAGE
-  $ create-aws-lambda-json all
+  $ transform-json all
 
 OPTIONS
   -h, --help     show CLI help
@@ -48,15 +48,15 @@ OPTIONS
   -o, --out=out  (required) output folder
 ```
 
-_See code: [src/commands/all.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.0.1/src/commands/all.ts)_
+_See code: [src/commands/all.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.1.0/src/commands/all.ts)_
 
-## `create-aws-lambda-json help [COMMAND]`
+## `transform-json help [COMMAND]`
 
-display help for create-aws-lambda-json
+display help for transform-json
 
 ```
 USAGE
-  $ create-aws-lambda-json help [COMMAND]
+  $ transform-json help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -67,27 +67,27 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
 
-## `create-aws-lambda-json list`
+## `transform-json list`
 
 describe the command here
 
 ```
 USAGE
-  $ create-aws-lambda-json list
+  $ transform-json list
 
 OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/list.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.0.1/src/commands/list.ts)_
+_See code: [src/commands/list.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.1.0/src/commands/list.ts)_
 
-## `create-aws-lambda-json single TRANSFORM`
+## `transform-json single TRANSFORM`
 
 runs a single transform on input data
 
 ```
 USAGE
-  $ create-aws-lambda-json single TRANSFORM
+  $ transform-json single TRANSFORM
 
 OPTIONS
   -h, --help     show CLI help
@@ -95,5 +95,5 @@ OPTIONS
   -o, --out=out  output file name: defaults to writing to console
 ```
 
-_See code: [src/commands/single.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.0.1/src/commands/single.ts)_
+_See code: [src/commands/single.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.1.0/src/commands/single.ts)_
 <!-- commandsstop -->
