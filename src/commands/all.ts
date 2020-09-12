@@ -4,7 +4,7 @@ import {Transformator} from '../transformator/transformator'
 import {ConsoleDataWriter, FolderDataWriter} from '../transformator/writer'
 import {TransformRepository} from '../transforms'
 
-export default class All extends Command {
+export default class AllTransform extends Command {
     static description = 'runs all transforms on input data';
 
     static flags = {
@@ -28,7 +28,7 @@ export default class All extends Command {
     async run() {
       try {
         TransformRepository.loadTransforms()
-        const {flags} = this.parse(All)
+        const {flags} = this.parse(AllTransform)
 
         const transforms = TransformRepository.getAll()
         const reader = new FileDataReader(flags.in)

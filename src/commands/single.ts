@@ -3,6 +3,7 @@ import {FileDataReader} from '../transformator/reader'
 import {Transformator} from '../transformator/transformator'
 import {ConsoleDataWriter, FileDataWriter} from '../transformator/writer'
 import {TransformRepository} from '../transforms'
+
 export default class SingleTransform extends Command {
   static description = 'runs a single transform on input data';
 

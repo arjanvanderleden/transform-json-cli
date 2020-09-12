@@ -1,7 +1,7 @@
 import {Command, flags} from '@oclif/command'
 import {TransformRepository} from '../transforms'
 
-export default class List extends Command {
+export default class ListTransform extends Command {
   static description = 'describe the command here'
 
   static flags = {
