@@ -8,13 +8,12 @@ export interface DynamoDbStreamEventTransformOptions extends TransformOptions {
 }
 
 export class DynamoDbStreamEventTransform extends TransformBase<DynamoDbStreamEventTransformOptions> {
-    readonly name = 'dynamo-db-stream-event';
+    readonly name = 'dynamodb-stream-event';
 
     readonly description = 'creates a DynamoDb stream event';
 
     constructor() {
       super()
-      console.log(`constructor ${this.name}`)
     }
 
     setOptions(options: DynamoDbStreamEventTransformOptions) {

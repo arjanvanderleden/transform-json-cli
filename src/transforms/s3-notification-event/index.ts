@@ -13,7 +13,6 @@ export class S3NotificationEventTransform extends TransformBase<S3NotificationEv
 
     constructor() {
       super()
-      console.log(`constructor ${this.name}`)
     }
 
     setOptions(options: S3NotificationEventTransformOptions) {

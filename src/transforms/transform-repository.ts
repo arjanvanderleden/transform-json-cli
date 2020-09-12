@@ -1,5 +1,6 @@
-import { DynamoDbStreamEventTransform, S3NotificationEventTransform, TransformBase } from '.'
-import { Lookup } from '../types'
+import {DynamoDbStreamEventTransform, S3NotificationEventTransform, TransformBase} from '.'
+import {Lookup} from '../types'
+import {ApiGatewayPostEventTransform} from './api-gateway-post-event'
 
 export class TransformRepository {
   private static transforms: Lookup<TransformBase<any>> = {};
@@ -11,7 +12,7 @@ export class TransformRepository {
   static listTransformers() {
     const toListItem = (key: string) => {
       const transform = this.transforms[key]
-      return ({ name: transform.name, description: transform.description })
+      return ({name: transform.name, description: transform.description})
     }
     return Object.keys(this.transforms).map(toListItem)
   }
@@ -19,6 +20,7 @@ export class TransformRepository {
   static loadTransforms() {
     this.add(new S3NotificationEventTransform())
     this.add(new DynamoDbStreamEventTransform())
+    this.add(new ApiGatewayPostEventTransform())
   }
 
   static get(key: string) {
@@ -29,10 +31,8 @@ export class TransformRepository {
   }
 
   static getAll() {
-    const toTransform = (key: string) => this.transforms[key];
-    return Object.keys(this.transforms).map(toTransform);
+    const toTransform = (key: string) => this.transforms[key]
+    return Object.keys(this.transforms).map(toTransform)
   }
 }
-
-
 
