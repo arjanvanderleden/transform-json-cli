@@ -1,7 +1,7 @@
 import {Command, flags} from '@oclif/command'
 import {FileDataReader} from '../transformator/reader'
 import {Transformator} from '../transformator/transformator'
-import {ConsoleDataWriter, FileDataWriter, FolderDataWriter} from '../transformator/writer'
+import {ConsoleDataWriter, FolderDataWriter} from '../transformator/writer'
 import {TransformRepository} from '../transforms'
 
 export default class All extends Command {
