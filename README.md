@@ -16,11 +16,11 @@ Creates aws lambda development json for like events
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g transform-json
+$ npm install -g transform-json-cli
 $ transform-json COMMAND
 running command...
 $ transform-json (-v|--version|version)
-transform-json/0.1.0 darwin-x64 node-v12.18.3
+transform-json-cli/0.1.0 darwin-x64 node-v12.18.3
 $ transform-json --help [COMMAND]
 USAGE
   $ transform-json COMMAND

@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "author": "Arjan van der Leden",
   "bin": {
-    "create-aws-lambda-json": "./bin/run"
+    "transform-json-cli": "./bin/run"
   },
-  "bugs": "https://github.com/arjanvanderleden/create-aws-lambda-json/issues",
+  "bugs": "https://github.com/arjanvanderleden/transform-json-cli/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -39,7 +39,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/arjanvanderleden/create-aws-lambda-json",
+  "homepage": "https://github.com/arjanvanderleden/transform-json-cli",
   "keywords": [
     "oclif"
   ],
@@ -47,12 +47,12 @@
   "main": "lib/index.js",
   "oclif": {
     "commands": "./lib/commands",
-    "bin": "transform-json",
+    "bin": "transform-json-cli",
     "plugins": [
       "@oclif/plugin-help"
     ]
   },
-  "repository": "arjanvanderleden/create-aws-lambda-json",
+  "repository": "arjanvanderleden/transform-json-cli",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint ./src --ext .ts --config .eslintrc",
