@@ -17,30 +17,30 @@ Creates aws lambda development json for like events
 <!-- usage -->
 ```sh-session
 $ npm install -g transform-json-cli
-$ transform-json COMMAND
+$ transform-json-cli COMMAND
 running command...
-$ transform-json (-v|--version|version)
-transform-json-cli/0.1.0 darwin-x64 node-v12.18.3
-$ transform-json --help [COMMAND]
+$ transform-json-cli (-v|--version|version)
+transform-json-cli/0.1.1 darwin-x64 node-v12.18.3
+$ transform-json-cli --help [COMMAND]
 USAGE
-  $ transform-json COMMAND
+  $ transform-json-cli COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`transform-json all`](#transform-json-all)
-* [`transform-json help [COMMAND]`](#transform-json-help-command)
-* [`transform-json list`](#transform-json-list)
-* [`transform-json single TRANSFORM`](#transform-json-single-transform)
+* [`transform-json-cli all`](#transform-json-cli-all)
+* [`transform-json-cli help [COMMAND]`](#transform-json-cli-help-command)
+* [`transform-json-cli list`](#transform-json-cli-list)
+* [`transform-json-cli single TRANSFORM`](#transform-json-cli-single-transform)
 
-## `transform-json all`
+## `transform-json-cli all`
 
 runs all transforms on input data
 
 ```
 USAGE
-  $ transform-json all
+  $ transform-json-cli all
 
 OPTIONS
   -h, --help     show CLI help
@@ -48,15 +48,15 @@ OPTIONS
   -o, --out=out  (required) output folder
 ```
 
-_See code: [src/commands/all.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.1.0/src/commands/all.ts)_
+_See code: [src/commands/all.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.1/src/commands/all.ts)_
 
-## `transform-json help [COMMAND]`
+## `transform-json-cli help [COMMAND]`
 
-display help for transform-json
+display help for transform-json-cli
 
 ```
 USAGE
-  $ transform-json help [COMMAND]
+  $ transform-json-cli help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -67,27 +67,27 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
 
-## `transform-json list`
+## `transform-json-cli list`
 
 describe the command here
 
 ```
 USAGE
-  $ transform-json list
+  $ transform-json-cli list
 
 OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/list.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.1.0/src/commands/list.ts)_
+_See code: [src/commands/list.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.1/src/commands/list.ts)_
 
-## `transform-json single TRANSFORM`
+## `transform-json-cli single TRANSFORM`
 
 runs a single transform on input data
 
 ```
 USAGE
-  $ transform-json single TRANSFORM
+  $ transform-json-cli single TRANSFORM
 
 OPTIONS
   -h, --help     show CLI help
@@ -95,5 +95,5 @@ OPTIONS
   -o, --out=out  output file name: defaults to writing to console
 ```
 
-_See code: [src/commands/single.ts](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/v0.1.0/src/commands/single.ts)_
+_See code: [src/commands/single.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.1/src/commands/single.ts)_
 <!-- commandsstop -->
