@@ -1,6 +1,7 @@
 import {DynamoDbStreamEventTransform, S3NotificationEventTransform, TransformBase} from '.'
 import {Lookup} from '../types'
 import {ApiGatewayPostEventTransform} from './api-gateway-post-event'
+import {DynamoDbMarshallTransform} from './dynamodb-marshal'
 
 export class TransformRepository {
   private static transforms: Lookup<TransformBase<any>> = {};
@@ -21,6 +22,7 @@ export class TransformRepository {
     this.add(new S3NotificationEventTransform())
     this.add(new DynamoDbStreamEventTransform())
     this.add(new ApiGatewayPostEventTransform())
+    this.add(new DynamoDbMarshallTransform())
   }
 
   static get(key: string) {
