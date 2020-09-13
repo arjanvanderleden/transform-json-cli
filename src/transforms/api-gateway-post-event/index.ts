@@ -1,7 +1,7 @@
-import { APIGatewayProxyEvent, APIGatewayEventDefaultAuthorizerContext, APIGatewayEventRequestContextWithAuthorizer } from 'aws-lambda'
-import { TransformBase } from '..'
-import { TransformOptions } from '../../types'
-import { toPathParameters } from '../../utils'
+import {APIGatewayProxyEvent, APIGatewayEventDefaultAuthorizerContext, APIGatewayEventRequestContextWithAuthorizer} from 'aws-lambda'
+import {TransformBase} from '..'
+import {TransformOptions} from '../../types'
+import {toPathParameters} from '../../utils'
 
 export interface ApiGatewayPostEventTransformOptions extends TransformOptions {
   pathParameters?: string;
@@ -11,8 +11,8 @@ export interface ApiGatewayPostEventTransformOptions extends TransformOptions {
 }
 
 export class ApiGatewayPostEventTransform extends TransformBase<ApiGatewayPostEventTransformOptions> {
-
   readonly name = 'apigateway-post-event';
+
   readonly description = 'creates an ApiGateway POST event';
 
   readonly transform = (data: any, options?: ApiGatewayPostEventTransformOptions) => {
