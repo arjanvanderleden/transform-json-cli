@@ -1,7 +1,7 @@
 import {Lookup} from '../types'
 
 const isNotAnEmptyString = (s: string) => s.trim().length > 0
-const toTrimmed = (s: string) => s.trim();
+const toTrimmed = (s: string) => s.trim()
 
 export const toStringArray = (src: string) => src === undefined ?
   [] :

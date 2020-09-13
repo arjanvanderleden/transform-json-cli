@@ -9,6 +9,8 @@ interface ConstructorParams {
 }
 
 export class Transformator {
+  static create = (params: ConstructorParams) => new Transformator(params);
+
   constructor(private params: ConstructorParams) {
   }
 

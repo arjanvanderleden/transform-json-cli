@@ -37,7 +37,7 @@ export default class SingleTransform extends Command {
       const reader = new FileDataReader(flags.in)
       const writer = flags.out === undefined ? new ConsoleDataWriter() : new FileDataWriter(flags.out)
 
-      await (new Transformator({reader, writer, transforms})).transform()
+      await (Transformator.create({reader, writer, transforms})).transform()
     } catch (error) {
       this.error(error)
     }
