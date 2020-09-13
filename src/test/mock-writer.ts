@@ -1,12 +1,13 @@
 import {Writer} from '../transformator/writer'
+import {Lookup} from '../types/lookup'
 
 export class MockWriter implements Writer {
-    data: any;
+  readonly data: Lookup<any> = {};
 
-    transform?: string;
+  transform?: string;
 
-    async write(data: any, transform: string): Promise<void> {
-      this.data = data
-      this.transform = transform
-    }
+  async write(data: any, transform: string): Promise<void> {
+    this.data[transform] = data
+    this.transform = transform
+  }
 }

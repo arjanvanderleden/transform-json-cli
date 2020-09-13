@@ -25,7 +25,7 @@ describe('command single', () => {
     .stub(TransformRepository, 'get', () => mockTransform)
     .command(['single', 'mock-transform', '-i ./does-not-exists.json'])
     .it('transforms for an existing transform', () => {
-      expect(writer.data).toStrictEqual({
+      expect(writer.data['mock-transform']).toStrictEqual({
         attribute: 3,
         oldAttribute: 'attribute',
       })

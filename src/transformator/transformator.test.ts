@@ -21,7 +21,7 @@ describe('transformator', () => {
 
     await transformator.transform()
 
-    expect(writer.data).toStrictEqual({
+    expect(writer.data['mock-transform']).toStrictEqual({
       attribute: 3,
       oldAttribute: 'attribute',
     })
