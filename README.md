@@ -1,13 +1,13 @@
-create-aws-lambda-json
+transform-json-cli
 ======================
 
 Creates aws lambda development json for like events
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/create-aws-lambda-json.svg)](https://npmjs.org/package/create-aws-lambda-json)
-[![CircleCI](https://circleci.com/gh/arjanvanderleden/create-aws-lambda-json/tree/master.svg?style=shield)](https://circleci.com/gh/arjanvanderleden/create-aws-lambda-json/tree/master)
-[![Downloads/week](https://img.shields.io/npm/dw/create-aws-lambda-json.svg)](https://npmjs.org/package/create-aws-lambda-json)
-[![License](https://img.shields.io/npm/l/create-aws-lambda-json.svg)](https://github.com/arjanvanderleden/create-aws-lambda-json/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/transform-json-cli.svg)](https://npmjs.org/package/transform-json-cli)
+[![CircleCI](https://circleci.com/gh/arjanvanderleden/transform-json-cli/tree/master.svg?style=shield)](https://circleci.com/gh/arjanvanderleden/transform-json-cli/tree/master)
+[![Downloads/week](https://img.shields.io/npm/dw/transform-json-cli.svg)](https://npmjs.org/package/transform-json-cli)
+[![License](https://img.shields.io/npm/l/transform-json-cli.svg)](https://github.com/arjanvanderleden/transform-json-cli/blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
