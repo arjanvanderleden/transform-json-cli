@@ -20,7 +20,7 @@ $ npm install -g transform-json-cli
 $ transform-json-cli COMMAND
 running command...
 $ transform-json-cli (-v|--version|version)
-transform-json-cli/0.1.1 darwin-x64 node-v12.18.3
+transform-json-cli/0.1.2 darwin-x64 node-v12.18.3
 $ transform-json-cli --help [COMMAND]
 USAGE
   $ transform-json-cli COMMAND
@@ -48,7 +48,7 @@ OPTIONS
   -o, --out=out  (required) output folder
 ```
 
-_See code: [src/commands/all.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.1/src/commands/all.ts)_
+_See code: [src/commands/all.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.2/src/commands/all.ts)_
 
 ## `transform-json-cli help [COMMAND]`
 
@@ -79,7 +79,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/list.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.1/src/commands/list.ts)_
+_See code: [src/commands/list.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.2/src/commands/list.ts)_
 
 ## `transform-json-cli single TRANSFORM`
 
@@ -95,5 +95,5 @@ OPTIONS
   -o, --out=out  output file name: defaults to writing to console
 ```
 
-_See code: [src/commands/single.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.1/src/commands/single.ts)_
+_See code: [src/commands/single.ts](https://github.com/arjanvanderleden/transform-json-cli/blob/v0.1.2/src/commands/single.ts)_
 <!-- commandsstop -->
